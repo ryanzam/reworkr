@@ -12,6 +12,11 @@ export interface Job {
   notes: string;
   beforePhotos: string[];
   afterPhotos: string[];
+  priority: 'urgent' | 'high' | 'normal';
+  type: 'solar' | 'plumbing' | 'electrical';
+  title: string;
+  description: string;
+  scheduledTime: string;
 }
 
 export interface JobSummary {
